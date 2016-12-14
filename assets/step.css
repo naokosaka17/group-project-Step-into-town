@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Poiret+One&subset=cyrillic,latin-ext');
+
+body {
+	background-color: #00ADEF;
+}
+
+.jumbotron {
+	
+	background-image: url("../images/blurred-people.jpg");
+	color: white;
+	font-family: 'Satisfy', cursive;
+	text-align: center;
+	display: table;
+    width: 100%;
+    position: relative;
+    height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+#header {
+	font-size:75px;
+	text-shadow: 3px 3px #00ADEF;
+	margin-top:150px;
+}
+#subhead {
+	font-size:25px;
+	text-shadow: 1px 1px #00ADEF;
+}
+.startStep {
+	background-color:white;
+	opacity:.8;
+	border-radius: 5px;
+	font-family: 'Kalam', cursive;
+	font-size:18px;
+	color: #00ADEF;
+	height:50px;
+}
+#go {
+	height:45px;
+	width:40px;
+	border-radius: 5px;
+	color:#00ADEF;
+	background-color:white;
+	opacity:.8;
+	font-family: 'Kalam', cursive;
+	font-size:18px;
+}
+
+#footer {
+	display: block;
+	clear: both;
+	background-color:white;
+	opacity:.8;
+	color:grey;
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:12px;
+}
+/** type.js new technology css**/
+.element {
+	color:#00ADEF;
+}
+
+.lead {
+	font-family: 'Kalam', cursive;
+	font-size: 30px;
+}
+
+#typed-strings {
+	background-color:white;
+	opacity:.8;
+	margin-top:200px;
+
+}
+
+
+

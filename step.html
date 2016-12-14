@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Step Into Town
+		</title>
+		<!--  favicon  -->
+		<link rel="icon" type="image/png" sizes="96x96" href="images/steps.png">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!--google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Kalam|Satisfy" rel="stylesheet">
+		<!-- custom css styling -->
+		<link rel="stylesheet" type="text/css" href="assets/step.css">
+		<link rel="stylesheet" type="text/css" href="assets/containers.css">
+
+		<!--jQuery-->
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+		<!-- custom JS link -->
+		<script src="assets/step.js"></script>
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    	<meta charset="utf-8">
+	</head>	
+	<body>
+
+		<div class="jumbotron">
+			<h1 id = "header"><b>Step 'n' Town</b></h1>
+			<h3 id = "subhead"> Where are you going today? </h3>
+		  	<span>
+			  	<input id="autocomplete" class="controls search pac-input startStep" type="text" placeholder="Enter city or state"> </input>  	
+			  	
+			  	<button id = "go" ><a href="#jump">Go</a></button>
+		  	</span>
+
+			<div id="typed-strings" class="type-wrap">
+            	<div class="lead" id ="typed-strings">
+            	<img src = "images/static-footprint1.png">
+            	<span class="element"></span>
+            	<img src = "images/static-footprint2.png">
+            	</div>
+            </div>	                			
+        </div> 
+
+		<div class="col-lg-12 text-center" id ="jump">
+			<h2 id ="question">What do you want to do today?</h2>
+		</div> 
+
+
+		<!--typed animation from MB -->
+
+		<!--jQueryAnimations links -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<script src="assets/typed.js"></script>
+
+				
+
+		<!-- Activities buttons -->
+		<!-- The circle icons feature an img and then words under for an entire on click btn -->
+		<div class="container2 col-md-3">
+
+				<div class= "button-header">
+					<button type="button" class= "btns" id="active"><img class ="char" src = "images/w-heart.png">     Workout</button>
+					<button type="button" class="btns" id="food"><img class ="char" src = "images/w-food.png">     Go out to Eat</button>
+					<button type="button" class="btns" id="drinks"><img class ="char" src = "images/w-drinks.png">     Get Drinks</button>
+					<button type="button" class="btns" id="shopping"><img class ="char" src = "images/w-shopper.png">    Go Shopping</button>
+					<button type="button" class="btns" id="park"><img class ="char" src = "images/w-park.png">     Go to a park </button>
+					<button type="button" class="btns" id="museum"><img class ="char" src = "images/w-museum.png">     Go to Museums </button>
+					<button type="button" class="btn btn-default btn-lg" id="clear">
+ 					<span aria-hidden="true"></span>Clear Map</button>
+				</div>	
+		</div>	
+
+		<!-- sqoot deals -->
+
+
+		<!--google maps-->
+		<div id="result"></div>
+
+		<div id="map" class ="container4 col-md-6"></div>
+
+		<div style="display: none">
+
+			<div id="info-content">
+			<table>
+			  <tr id="iw-url-row" class="iw_table_row">
+			    <td id="iw-icon" class="iw_table_icon"></td>
+			    <td id="iw-url"></td>
+			  </tr>
+			  <tr id="iw-address-row" class="iw_table_row">
+			    <td class="iw_attribute_name">Address:</td>
+			    <td id="iw-address"></td>
+			  </tr>
+			  <tr id="iw-phone-row" class="iw_table_row">
+			    <td class="iw_attribute_name">Telephone:</td>
+			    <td id="iw-phone"></td>
+			  </tr>
+			  <tr id="iw-website-row" class="iw_table_row">
+			    <td class="iw_attribute_name">Website:</td>
+			    <td id="iw-website"></td>
+			  </tr>
+			</table>
+			</div>
+
+		</div>
+			
+		<div id="dealsFromSqoot" class="col-md-3">
+			DEALS GO HERE!!!!
+		</div> 
+		<!--footer-->
+
+		<div id ="footer" class= "col-md-12">
+			Copyright 2016 UCF Coding Bootcamp <br>
+			Group Project: Step 'n' Town <br>
+
+			<!--footprints gif-->
+			<a id ="walking" href="https://www.animatedimages.org/cat-footsteps-1203.htm"><img src="https://www.animatedimages.org/data/media/1203/animated-footstep-image-0001.gif" border="0" alt="animated-footstep-image-0001"/></a><br>
+		</div>
+
+			<!--JS Google Maps API plus custom file-->	
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfjDeIgIBM1FumpRj68zq9Soze0RL2odM&libraries=places&callback=initMap"
+		    async defer></script>
+			
+			<!-- custom JS link -->
+			<script src="assets/step.js"></script>
+
+	</body>
+</html>
